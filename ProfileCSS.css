@@ -21,7 +21,7 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid #66ff66;
     
 }
 .fixed-bar{
@@ -33,7 +33,7 @@ body{
 }
 
 #header{
-    position: relative;
+    position: static;
     text-align: center;
 }
 
@@ -91,10 +91,25 @@ h1{
     margin-right: 20px;
     
 }
-h3#utente-element{
+h3.utente-element{
     text-align: center;
 }
 
 h3#social{
     color: #ffffd1;
+}
+
+#tab-container{
+    position: relative;
+    margin-top: 30%
+}
+
+#cerca{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 40%;
+}
+
+#logo-head{
+    position: absolute;
 }
