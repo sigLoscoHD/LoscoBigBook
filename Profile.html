@@ -24,14 +24,24 @@ and open the template in the editor.
     <body>
       
         <div id="page">
+            
             <div id="header">
                 <h1>Nome Cognome</h1>
                 <hr size="1" color="#66ff66">
-                <div id="ProfileImageContainer">
-                    <img id="ProfileImage" src="foto.jpg" alt="immagine del profilo"/>
+            </div>     
+            
+            <div id="ProfileImageContainer">
+                <div id="change-profile-image">
+                    <input type="file" class="btn"/>
+                    <button class="btn">Cambia</button>
                 </div>
-                
-            </div> 
+                <img id="ProfileImage" src="foto.jpg" alt="immagine del profilo"/>
+            </div>
+
+            <div id="richiestedamicizia">
+                Richieste d'amicizia
+            </div>
+            
             <div id="tab-container">
                 <div id="tabs">
                     <ul style="background-color: #66ff66;">
@@ -119,7 +129,17 @@ and open the template in the editor.
                         <button class="btn">Cerca</button>
                     </td>
                 </tr>
-            </table>                   
+            </table> 
+            <table id="ancore-home-container">
+                <tr>
+                    <td>
+                        <a href="Profile.html"><div class="btn">Profilo</div></a>
+                    </td>
+                    <td>
+                        <a href="#"><div class="btn">Home</div></a>
+                    </td>
+                </tr>
+            </table>
         </div>
         
     </body>
