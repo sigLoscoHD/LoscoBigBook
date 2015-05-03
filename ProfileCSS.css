@@ -89,6 +89,10 @@ a{
     border-bottom: 1px solid #66ff66;
 }
 
+#nome-cognome{
+    color: #66ff66;
+}
+
 #middle-container{
     position: relative;
     width: 100%;
@@ -134,19 +138,12 @@ a{
     overflow-y: scroll;
 }
 
-h1{
-    color: #66ff66
-}
-
 #tab-container{
     position: relative;
     margin-top: 5%;
 }
-
-#menu-list{
-    font-family: Verdana;
-    font-size: 20px;
-    list-style: none;
+.tabs{
+    color: #66ff66;
 }
 
 .post{
@@ -168,5 +165,37 @@ h3#social{
     color: #ffffd1;
 }
 
+p{
+    color: #333333;
+} 
 
+#like-container{
+    border-top: 1px solid #66ff66;
+    border-bottom: 1px solid #66ff66;
+}
+
+
+#mi-piace{
+    margin-right: 10px;
+}
+
+.tasto-like:visited{
+    color: #66ff66;
+}
+
+.tasto-like:hover{
+    text-decoration: underline;
+}
+
+#inserisci-commento{
+    resize: none;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #66ff66;
+}
+
+#comment-container{
+
+}
 

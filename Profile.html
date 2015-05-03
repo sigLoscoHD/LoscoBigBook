@@ -24,14 +24,16 @@ and open the template in the editor.
     <body> 
         <div id="page">  
             <div id="header">
-                <h1>Nome Cognome</h1>
+                <h1 id="nome-cognome">Nome Cognome</h1>
             </div>
             <div id="middle-container">
                 <div id="ProfileImageContainer">
                     <img id="ProfileImage" src="foto.jpg" alt="immagine del profilo"/>
                 </div> 
                 <div id="richiestedamicizia">
-                    Richieste d'amicizia
+                    <div>
+                        Richieste d'amicizia
+                    </div>
                 </div>
                 <div id="change-profile-image">
                     <div id="input-file-container">
@@ -45,7 +47,7 @@ and open the template in the editor.
             <div id="tab-container">
                 <div id="tabs">
                     <ul style="background-color: #66ff66;">
-                      <li><a href="#tabs-1">Bacheca</a></li>
+                        <li><a href="#tabs-1">Post</a></li>
                       <li><a href="#tabs-2">Informazioni</a></li>
                       <li><a href="#tabs-3">Amici</a></li>
                     </ul>
@@ -61,50 +63,43 @@ and open the template in the editor.
                                 Ho un materasso di parole
                                 Scritte apposta per te
                                 E ti direi spegni la luce
-                                Che il cielo c'è
-                                Star lontano da lei non si vive
-                                Stare senza di lei mi uccide
-                                Testa dura testa di rapa
-                                Vorrei amarti anche qua
-                                Nel cesso di una discoteca
-                                O sopra il tavolo di un bar
-                                O stare nudi in mezzo a un campo
-                                A sentirsi addosso il vento
-                                Io non chiedo più di tanto
-                                Anche se muoio son contento
                                 </p>
+                                <div id="like-container">
+                                    <span id="like-counter">
+                                        #mi piace
+                                    </span>
+                                    <span id="mi-piace">
+                                        <a href="#" role="button" class="tasto-like" style="color: #66ff66;">
+                                            Mi piace
+                                        </a>
+                                    </span> 
+                                     <span id="dislike-counter">
+                                        #non mi piace
+                                    </span>
+                                    <span id="non-mi-piace" class="tasto-like">
+                                        <a href="#" role="button" class="tasto-like" style="color: #66ff66;">
+                                            Non mi piace
+                                        </a>
+                                    </span>
+                                </div>
+                                <div id="comment-container">
+                                    <textarea id="inserisci-commento" cols="64" rows="4" placeholder="Commenta..."></textarea>
+                                </div>
                             </div>
-                            <div class="post">
-                                <h3 class="author-post">Nome Cognome</h3>
-                                <p class="post-text">
-                                Non so aspettarti più di tanto
-                                Ogni minuto mi dà
-                                L'stinto di cucire il tempo
-                                E di portarti di qua
-                                Ho un materasso di parole
-                                Scritte apposta per te
-                                E ti direi spegni la luce
-                                Che il cielo c'è
-                                Star lontano da lei non si vive
-                                Stare senza di lei mi uccide
-                                Testa dura testa di rapa
-                                Vorrei amarti anche qua
-                                Nel cesso di una discoteca
-                                O sopra il tavolo di un bar
-                                O stare nudi in mezzo a un campo
-                                A sentirsi addosso il vento
-                                Io non chiedo più di tanto
-                                Anche se muoio son contento
-                                </p>
-                            </div>
-                        </div>
+                        </div>   
                     </div>
                     <div id="tabs-2">
-                      <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                        <p id="nome">Nome: </p>
+                        <p id="cognome">Cognome: </p>
+                        <p id="email">Email: </p>
+                        <p id="data-di-nascita">Data di Nascita: </p>
+                        <p id="nato-a"> Nato a: </p>
+                        <p id="luogo">Vive a: </p>
+                        <p id="stato">Stato sentimentale: </p>
+                        
                     </div>
                     <div id="tabs-3">
-                      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                        Qui compariranno gli amici
                     </div>
                 </div>
             </div>
