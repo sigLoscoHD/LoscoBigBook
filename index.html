@@ -7,7 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         <title>Homepage</title>
-       
+        <script src="jquery-1.8.3.js" type="text/javascript"></script>
+        <script src="controllohome.js" type="text/javascript"></script>
         <link href="CSShome.css" rel="stylesheet" type="text/css"/>
     </head>
     
@@ -16,14 +17,14 @@ and open the template in the editor.
         <div class="image"></div>
       
         <div class="registrazione">
-            <p class="pregistrazione">Registrati!</p>
-            <form action="#" method="POST">
+            <h2>Registrati ora! E' gratis</h2>
+            <form action="prova.html" method="POST">
                 <table>
                     <tr>
-                      <td>Nome</td> <td><input type="text" required placeholder="Nome"/></td>
+                        <td>Nome</td> <td><input type="text" id="nome" required placeholder="Nome" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/></td>
                     </tr>
                     <tr>
-                      <td>Cognome</td> <td><input type="text" required placeholder="Cognome"/></td>
+                      <td>Cognome</td> <td><input type="text" id="cognome" required placeholder="Cognome" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/></td>
                     </tr>
                     <tr>
                         <td>Sesso</td> <td>M<input type="radio" value="M" checked/>
@@ -31,16 +32,19 @@ and open the template in the editor.
                                        </td>
                     </tr>
                     <tr>
-                       <td>Email</td><td><input type="email" required placeholder="Email"/></td>
+                       <td>Email</td><td><input type="email" id="email" required placeholder="Email" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/></td>
                     </tr>
                     <tr>
-                        <td>Data di nascita</td><td> <input type="date"/></td>
+                        <td>Data di nascita</td><td> <input type="date" id="data"  required max="2000-12-31" min="1900-01-01" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/></td>
                     </tr>
                     <tr>
-                        <td>Password</td><td> <input type="password" required placeholder="Password"/><td>
+                        <td>Password</td><td> <input type="password" id="password" required placeholder="Password" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/><td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="Registrati!"/></td> 
+                        <td>Ripeti Password</td><td> <input type="password" id="npassword" required placeholder=" Ripeti password" style="width: 180px; height: 30px; padding: 2px; border: 1px solid black"/><td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Registrati!" onclick="return controllo();" class="btn1"/></td> 
                     </tr>
                 </table>   
             
@@ -65,9 +69,9 @@ and open the template in the editor.
                         <td>Password</td> 
                     </tr>
                     <tr>
-                        <td> <input type="text" required placeholder="Username/email"/></td> 
-                        <td> <input type="password" required placeholder="Password"/></td>
-                        <td><input type="button" value="Accedi"/></td>
+                        <td> <input type="email" id="user" required placeholder="Email" style="width: 160px; height: 20px; padding: 2px; border: 1px solid black"/></td> 
+                        <td> <input type="password" id="pass" required placeholder="Password" style="width: 160px; height: 20px; padding: 2px; border: 1px solid black"/></td>
+                        <td><input type="button" value="Accedi" class="btn"/></td>
                     </tr>
                 </table>
                 

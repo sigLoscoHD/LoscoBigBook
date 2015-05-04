@@ -8,9 +8,8 @@ and open the template in the editor.
     Author     : Matteo
 */
 body {
-    //background-image: url(social.jpg);
-    //background-repeat: no-repeat;
-    //background-position: center center;
+    margin:0;
+    padding: 0;
     background-attachment: fixed;
     font-family: verdana;
    
@@ -58,7 +57,7 @@ body {
          {
           position:fixed;
           margin-left: 75%;
-          margin-top:0;
+          margin-top:4%;
           background-color: #ffffd1;
           padding:0.5%;
           height: 100%;
@@ -69,3 +68,35 @@ body {
               font-size: large;
               font-style: inherit;
              }
+             
+.btn {
+  background: #66ff66;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 3px 10px 3px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1ac211;
+}
+
+
+.btn1 {
+  position:absolute;
+  left:15%;
+  bottom:25%;
+  background: #66ff66;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: verdana;
+}
+
+.btn1:hover {
+  background: #1ac211;
+}
