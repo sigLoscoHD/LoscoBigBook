@@ -1,13 +1,25 @@
 function controllo(){
     var password=$("#password").val();
     var npassword=$("#npassword").val();
-    var data=$("#data").val();
- 
-
+  
  if(password != npassword)
   {
-        alert("Le password inserite non sono uguali!");
-        return false;
+        $("body").append("<div id='myDiv' title='Errore' style='background-color:#ffffd1; font-family:verdana;'>Le password inserite non sono uguali!</div>");
+        
+        $( "#myDiv" ).dialog({dialogClass: 'myTitleClass',
+                                buttons: [
+                                {
+                                  text: "OK",
+                                  
+                                  click: function() {
+                                    $( this ).dialog( "close" );
+                                  }
+                                }
+                              ]
+                            });
+        
+  return false;
   }
   return true;
 }
+

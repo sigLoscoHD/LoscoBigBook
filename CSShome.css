@@ -100,3 +100,13 @@ body {
 .btn1:hover {
   background: #1ac211;
 }
+
+
+.myTitleClass .ui-dialog-titlebar {
+    background:#66ff66;
+}
+
+.myTitleClass.ui-dialog-buttonset{
+    background-color:#ffffd1; 
+    font-family:verdana;
+}
