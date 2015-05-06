@@ -50,6 +50,10 @@ body{
     position: absolute;
 }
 
+h3#social{
+    color: #ffffd1;
+}
+
 .btn {
   background: #66ff66;
   border-radius: 8px;
@@ -159,10 +163,6 @@ a{
 h3.author-post{
     margin-left: 50px;
     color: #66ff66;
-}
-
-h3#social{
-    color: #ffffd1;
 }
 
 p{
