@@ -4,7 +4,7 @@ function controllo(){
   
  if(password != npassword)
   {
-        $("body").append("<div id='myDiv' title='Errore' style='background-color:#ffffd1; font-family:verdana;'>Le password inserite non sono uguali!</div>");
+        $("body").append("<div id='myDiv' title='Errore' style='font-family:verdana;'>Le password inserite non sono uguali!</div>");
         
         $( "#myDiv" ).dialog({dialogClass: 'myTitleClass',
                                 buttons: [
