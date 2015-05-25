@@ -38,6 +38,7 @@ and open the template in the editor.
 
 #ProfileImage{
     width: 100%;
+    min-height: 280px;
 }
 
 #change-profile-image{
